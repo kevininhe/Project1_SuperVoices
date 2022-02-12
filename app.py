@@ -28,7 +28,7 @@ scheduler.init_app(app)
 scheduler.start()
 
 # Initialize Celery
-celery = Celery(app.name, broker=app.config['CELERY_BROKER_URL'])
+celery = Celery(app.name, broker=app.config['CELERY_BROKER_URL'],include=['app'])
 celery.conf.update(app.config)
 
 @celery.task
