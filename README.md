@@ -52,3 +52,8 @@ Crear las carpetas /var/run/celery/ y /var/log/celery/
 Darle permisos de ejecución al usuario
 - chown -R celery:celery /var/log/celery/
 - chown -R celery:celery /var/run/celery/
+
+Comandos utiles
+- systemctl daemon-reload
+- systemctl enable celery.service (habilita que se ejecute cada vez que se reinicie la maquina)
+- sudo systemctl status celery
