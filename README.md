@@ -23,7 +23,7 @@ Una vez clonado el archivo se debe hacer lo siguiente:
   - sudo systemctl status redis
 6. Instalar la librería de redis y ffmpeg
   - pip3 install redis
-  - pip install ffmpeg
+  - pip install ffmpeg-python
 
 Para ejecutar la aplicación se debe hacer lo siguiente:
 1. Ejecutar la instancia de Celery
