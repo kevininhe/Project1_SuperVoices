@@ -36,19 +36,19 @@ Para ejecutar la aplicación se debe hacer lo siguiente:
 https://docs.celeryproject.org/en/stable/userguide/daemonizing.html#daemon-systemd-generic
 
 Celery.service
-User:ky.infante3022
-Borrar el “Group”
+- User:ky.infante3022
+- Borrar el “Group”
 Ruta donde se encuentra la aplicación:
-WorkingDirectory=/home/ky.infante3022/Project1/Back/Project1_SuperVoices
+- WorkingDirectory=/home/ky.infante3022/Project1/Back/Project1_SuperVoices
 
 conf.d celery
 Ruta proyecto virtual:
-CELERY_BIN=/home/ky.infante3022/Project1/Back/voices_project/bin/celery
+- CELERY_BIN=/home/ky.infante3022/Project1/Back/voices_project/bin/celery
 Ruta aplicación:
-CELERY_APP="app.celery”
+- CELERY_APP="app.celery”
 
 Crear las carpetas /var/run/celery/ y /var/log/celery/
 
 Darle permisos de ejecución al usuario
-chown -R celery:celery /var/log/celery/
-chown -R celery:celery /var/run/celery/
+- chown -R celery:celery /var/log/celery/
+- chown -R celery:celery /var/run/celery/
