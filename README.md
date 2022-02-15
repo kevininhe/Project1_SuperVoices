@@ -31,7 +31,7 @@ Para ejecutar la aplicación se debe hacer lo siguiente:
 2. Ejecutar app.py
   - python3 app.py
 
-Dejar Celery como ejecutable
+# Dejar Celery como ejecutable
 
 https://docs.celeryproject.org/en/stable/userguide/daemonizing.html#daemon-systemd-generic
 
