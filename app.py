@@ -51,6 +51,7 @@ def convertir_archivo(urlEntrada):
 	stream = ffmpeg.overwrite_output(stream)
 	ffmpeg.run(stream)
 	print("Archivo convertido. Ruta {}".format(urlSalida))
+	return urlSalida
 
 @celery.task
 def convertir_voces():
