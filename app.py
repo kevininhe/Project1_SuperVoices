@@ -11,11 +11,11 @@ app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://kevin:A$QLPa55wordForK@172.24.41.201/VoicesProject'
 app.config['MAIL_SERVER']='smtp.gmail.com'
-app.config['MAIL_PORT'] = 465
+app.config['MAIL_PORT'] = 587
 app.config['MAIL_USERNAME'] = 'supervoicesinfo@gmail.com'
 app.config['MAIL_PASSWORD'] = 'JHJ4N4Sk64pAzsg'
-app.config['MAIL_USE_TLS'] = False
-app.config['MAIL_USE_SSL'] = True
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USE_SSL'] = False
 
 # Celery configuration
 app.config['CELERY_BROKER_URL'] = 'redis://localhost:6379/0'
@@ -70,4 +70,5 @@ def cronTask():
 		convertir_voces.delay()
 
 if __name__ == '__main__':
+	#app.run(debug=True,host='0.0.0.0', port=5001)
 	app.run(debug=True)
