@@ -1,6 +1,6 @@
 # Project1_SuperVoices
 
-Una vez clonado el archivo se debe hacer lo siguiente:
+Una vez clonado el repositorio se debe hacer lo siguiente:
 
 1. Crear un entorno virtual usando python3 -m venv <nombre_proyecto>
 2. Activar el entorno usando source <nombre_proyecto>/bin/activate
