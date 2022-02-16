@@ -1,6 +1,6 @@
 .DS_Store
 voices_project/
-
+config.py
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

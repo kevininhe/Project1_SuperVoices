@@ -9,16 +9,7 @@ from celery import Celery
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = '******'
-app.config['MAIL_SERVER']='smtp.gmail.com'
-app.config['MAIL_PORT'] = 587
-app.config['MAIL_USERNAME'] = '********'
-app.config['MAIL_PASSWORD'] = '*******'
-app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USE_SSL'] = False
-
-# Celery configuration
-app.config['CELERY_BROKER_URL'] = '********'
+app.config.from_object('config')
 
 db.app = app
 db.init_app(app)
