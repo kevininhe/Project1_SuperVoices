@@ -9,16 +9,16 @@ from celery import Celery
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://kevin:A$QLPa55wordForK@172.24.41.201/VoicesProject'
+app.config['SQLALCHEMY_DATABASE_URI'] = '******'
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
-app.config['MAIL_USERNAME'] = 'supervoicesinfo@gmail.com'
-app.config['MAIL_PASSWORD'] = 'JHJ4N4Sk64pAzsg'
+app.config['MAIL_USERNAME'] = '********'
+app.config['MAIL_PASSWORD'] = '*******'
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
 
 # Celery configuration
-app.config['CELERY_BROKER_URL'] = 'redis://localhost:6379/0'
+app.config['CELERY_BROKER_URL'] = '********'
 
 db.app = app
 db.init_app(app)
