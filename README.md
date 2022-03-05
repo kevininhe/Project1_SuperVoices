@@ -3,7 +3,7 @@
 Una vez clonado el repositorio se debe hacer lo siguiente:
 
 1. sudo apt-get install python3
-2. sudo apt-get install python3-venv
+2. sudo apt-get install python3-venv , o si eso no funciona, apt-get install python3-virtualenv
 3. Crear un entorno virtual usando python3 -m venv <nombre_proyecto>
 4. Activar el entorno usando source <nombre_proyecto>/bin/activate
 5. Instalar las siguientes librerías:
