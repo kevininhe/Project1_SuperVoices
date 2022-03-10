@@ -61,3 +61,4 @@ Comandos utiles
 - systemctl enable celery.service (habilita que se ejecute cada vez que se reinicie la maquina)
 - sudo systemctl status celery
 - sudo systemctl start celery
+- systemctl reset-failed (cuando falla mucho, para poderlo reiniciar)
