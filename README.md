@@ -62,3 +62,7 @@ Comandos utiles
 - sudo systemctl status celery
 - sudo systemctl start celery
 - systemctl reset-failed (cuando falla mucho, para poderlo reiniciar)
+
+Para monitorear:
+- pip install flower
+- celery -A app.celery flower
