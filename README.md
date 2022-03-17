@@ -53,8 +53,8 @@ Ruta aplicación:
 Crear las carpetas /var/run/celery/ y /var/log/celery/
 
 Darle permisos de ejecución al usuario
-- chown -R celery:celery /var/log/celery/
-- chown -R celery:celery /var/run/celery/
+- chown -R ubuntu /var/log/celery/
+- chown -R ubuntu /var/run/celery/
 
 Comandos utiles
 - systemctl daemon-reload
